@@ -3,7 +3,9 @@ using MediatR;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using WebApplication9WebApi.Models.DB;
+
 namespace WebApplication9WebApi.Handlers.QueryHandlers;
+
 public sealed record GetPersonaQuery() : IRequest<List<Persona>>;
 public sealed record GetPersonaByIdQuery(int id) : IRequest<Persona>;
 public sealed record GetPersonaConDapperQuery() : IRequest<List<Persona>>;
