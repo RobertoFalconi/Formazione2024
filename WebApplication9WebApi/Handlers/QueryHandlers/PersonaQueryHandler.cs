@@ -8,6 +8,7 @@ public sealed record GetPersonaQuery() : IRequest<List<Persona>>;
 public sealed record GetPersonaByIdQuery(int id) : IRequest<Persona>;
 public sealed record GetPersonaConDapperQuery() : IRequest<List<Persona>>;
 public sealed record GetPersonaByIdConDapperQuery(int id) : IRequest<Persona>;
+
 public sealed class PersonaQueryHandler :
     IRequestHandler<GetPersonaQuery, List<Persona>>,
     IRequestHandler<GetPersonaByIdQuery, Persona>,
