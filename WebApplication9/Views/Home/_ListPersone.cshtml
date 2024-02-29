@@ -1,0 +1,9 @@
+﻿@model IEnumerable<PersonaViewModel>
+
+<div class="text-center">
+    <h1 class="display-4">@ViewBag.Count contatti: </h1>
+    @foreach (var item in Model)
+    {
+        <h4>@item.Nome @item.Cognome</h4>
+    }
+</div>
